@@ -1,0 +1,55 @@
+#title{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.paragrafos{
+    position: relative;
+    left: 45%;
+   color: black;
+}
+
+.camposDeTexto{
+    position: relative;
+    left: 45%;
+    width: 300px;  /* Largura maior */
+    height: 30px;  /* Altura maior */
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta o tamanho do texto dentro do input */
+    padding: 10px; /* Espaço interno para melhorar a aparência */
+    
+
+}
+#mostrarSenha {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mostrarSenha:hover {
+    background-color: #0056b3;
+}
+#btnEntrar{
+    position: relative;
+    left: 45%;
+    left: 45%;
+    width: 310px;  /* Largura maior */
+    height: 40px;  /* Altura maior */
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta o tamanho do texto dentro do input */
+    padding: 10px; /* Espaço interno para melhorar a aparência */
+}
+#outrasFormas{
+    position: relative;
+    left: 48%;
+}
+#exibirResultado{
+    position: relative;
+    left: 45%;
+    top: 40%;
+}
