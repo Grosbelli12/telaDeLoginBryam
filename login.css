@@ -6,48 +6,55 @@
 
 .paragrafos{
     position: relative;
-    left: 45%;
+    left: 40%;
+    top: 15px;
    color: black;
 }
 
 .camposDeTexto{
     position: relative;
-    left: 45%;
-    width: 300px;  /* Largura maior */
-    height: 30px;  /* Altura maior */
+    left: 40%;
+    width: 300px; 
+    height: 30px;  
     border-radius: 5px;
-    font-size: 16px; /* Aumenta o tamanho do texto dentro do input */
-    padding: 10px; /* Espaço interno para melhorar a aparência */
+    font-size: 16px; 
+    padding: 10px; 
     
 
 }
-#mostrarSenha {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.passoword{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}  
+#mostrarSenha{
+    position: relative;
+    left: 37%;
+    top: 32%;
 }
 
-#mostrarSenha:hover {
-    background-color: #0056b3;
-}
 #btnEntrar{
+    background-color: rgb(31, 105, 192);
     position: relative;
-    left: 45%;
-    left: 45%;
-    width: 310px;  /* Largura maior */
-    height: 40px;  /* Altura maior */
+    left: 40%;
+    width: 324px;  
+    height: 40px; 
     border-radius: 5px;
-    font-size: 16px; /* Aumenta o tamanho do texto dentro do input */
-    padding: 10px; /* Espaço interno para melhorar a aparência */
+    font-size: 16px; 
+    padding: 10px; 
 }
 #outrasFormas{
     position: relative;
-    left: 48%;
+    left: 46%;
+    color: blue;
 }
+
+#EsqueciSenha{
+    position: relative;
+    left: 40%;
+    color: blue;
+}
+
 #exibirResultado{
     position: relative;
     left: 45%;

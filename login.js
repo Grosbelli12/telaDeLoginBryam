@@ -12,10 +12,10 @@ document.getElementById("mostrarSenha").addEventListener('click', function() {
     var senhaInput = document.getElementById('minhaSenha');
     if (senhaInput.type === 'password') {
         senhaInput.type = 'text';
-        this.textContent = 'Ocultar Senha';
+        this.textContent = '👁️‍🗨️';
     } else {
         senhaInput.type = 'password';
-        this.textContent = 'Mostrar Senha';
+        this.textContent = '👁️';
     }
     });
 
