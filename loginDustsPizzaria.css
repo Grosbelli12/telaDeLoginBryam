@@ -1,0 +1,37 @@
+.title{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#titulo{
+    position: relative;
+    left: 100px;
+    top: 110px;
+        font-family: "Galada", cursive;
+        font-weight: 400    ;
+        font-size: 200px;
+        font-style: normal;
+    color:#FDFDFD ;
+}
+
+#subtitulo{
+    position: relative;
+    left: 10px;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Hubballi', cursive;
+    color:#FDFDFD;
+}
+
+#imagem{
+    background-image: url('apresentation_img.png');
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  
+ 
+}
