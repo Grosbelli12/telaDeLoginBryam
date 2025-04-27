@@ -1,18 +1,27 @@
-.title{
+.imagem{
+
+    background-image: url('apresentation_img.png');
+    background-size: auto;
+    background-position: center;
     display: flex;
-    flex-direction: row;
-    
+    position: relative;
+    border-radius: 20px;
+    top: 50px;
+    left: 200px;
+    height: 700px;
+    width: 650px;
 }
 
 #titulo{
+    display: flex;
+    flex-direction: row;
     position: relative;
-    left: 100px;
-    top: 110px;
-        font-family: "Galada", cursive;
-        font-weight: 400    ;
-        font-size: 200px;
-        font-style: normal;
-    color:#FDFDFD ;
+    left: 120px;
+    top: 35px;
+    font-family: "Galada", cursive;
+    font-weight: 200;
+    font-size: 110px;
+    color:#FDFDFD;
 }
 
 #subtitulo{
@@ -23,15 +32,4 @@
     flex-direction: row;
     font-family: 'Hubballi', cursive;
     color:#FDFDFD;
-}
-
-#imagem{
-    background-image: url('apresentation_img.png');
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 100%;
-  
- 
 }
