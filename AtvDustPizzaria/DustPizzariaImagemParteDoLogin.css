@@ -1,0 +1,55 @@
+.imagem{
+    background-image: url('apresentation_img.png');
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    position: fixed;
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px;
+    top: 80px;
+    left: 200px;
+    height: 700px;
+    width: 650px;
+}
+
+.title{
+color:#FDFDFD;
+}
+#titulo{
+    position: relative;
+    display: flex;
+    left: 75px;
+    top: -15px;
+    font-family: "Galada", cursive;
+    font-weight: 200;
+    font-size: 110px;
+}
+
+#subtitulo{
+    position: relative;
+    display: flex;
+    left: 77px;
+    top: -150px;
+    font-family: "Hubballi", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 53px;
+}
+
+#textoRodape{
+    position: absolute;
+    display: flex;
+    right: 148px;
+    top: 586px;
+    font-family: "Galada", cursive;
+    font-weight: 100;
+    font-size: 35px;
+    color:#FDFDFD;
+}
+
+#linhas{
+    position: absolute;
+    display: flex;
+    left: 48px;
+    top:  388px;
+}
