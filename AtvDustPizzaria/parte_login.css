@@ -47,3 +47,9 @@
     left:704px;
 }
 
+#minhaSenha{
+    position: fixed;
+    display: flex;
+    left: 704px;
+}
+
