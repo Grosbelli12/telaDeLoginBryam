@@ -1,0 +1,134 @@
+
+#fundo{
+    position: fixed;
+    display: flex;
+    top: 80px;
+    left: 657.44px;
+    width: 462.55px;
+    height: 704px; 
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+    background-color: #A46C44; 
+}
+#logoRedonda{
+     position: fixed;
+     display: flex;
+     width: 175px;
+     height: 175px;
+     left: 945px;
+     top: 95px;
+
+}
+#login{
+    position: fixed;
+    display: flex;
+    top: 125px;
+    left: 704px;
+    font-family: Galada;
+    font-weight: 400;
+    font-size: 55px;
+    letter-spacing: -0.23px ;   
+    color: #FDFDFD;
+}
+#cheirinho{
+    position: fixed;
+    display: flex;
+    top: 230px;
+    left: 704px;
+    font-family: "Hubballi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.23px;
+    color: #FDFDFD;
+}
+#principal{
+    position: relative;
+    display: flex;
+    left:704px;
+    
+    
+}
+.email-container {
+    position: fixed;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o input */
+    left: 704px;
+    top: 291px;
+}
+
+.password-container {
+    position: fixed;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o input */
+    left: 704px;
+    top: 342px;
+}
+.camposDeTexto {
+    border: none; /* Remove as bordas padrão do input */
+    border-bottom: 1px solid #fdfdfd; /* Linha fina branca na parte inferior */
+    background: transparent; /* Fundo transparente para destacar a linha */
+    color: #FDFDFD; /* Cor do texto branca para combinar com o design */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px 0; /* Espaçamento interno */
+    width: 370px; /* Largura do campo */
+}
+.camposDeTexto:focus {
+    border-bottom: 1px solid #FFFFFF; /* Linha mais brilhante ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+#icone-email{
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    left: 718px;
+}
+
+#icone-chave{
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    left: 718px;
+}
+
+#icone-senha{
+    position: fixed;
+    display: flex;
+    font-size: 20px;
+    left: 1040px;
+    cursor: pointer;
+}
+
+#esqueci-senha{
+    position: fixed;
+    display: flex;
+    top: 365px;
+    font-family: "Hubballi", sans-serif;
+    font-weight: 400;
+    Size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.23px;
+    vertical-align: middle;
+    color: #fdfdfd; 
+    cursor: pointer;
+}
+
+.botao {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: 420px;
+    width: 369.6px;
+    left: 704px;
+    height: 40px; 
+    border-radius: 5px;
+    border: none;
+    font-family: "Hubballi", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: -0.23px;
+    background-color: #FDFDFD;
+    color: #231B15; 
+    cursor: pointer;
+}

@@ -1,5 +1,5 @@
 .imagem{
-    background-image: url('apresentation_img.png');
+    background-image: url('../assets/apresentation_img.png');
     background-size: auto;
     background-position: center;
     display: flex;

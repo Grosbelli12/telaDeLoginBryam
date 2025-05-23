@@ -10,7 +10,7 @@ function lerSenha(){
 
 document.getElementById("mostrarSenha").addEventListener('click', function() {
     var senhaInput = document.getElementById('minhaSenha');
-    if (senhaInput.type === 'password') {
+    if (                                 senhaInput.type === 'password') {
         senhaInput.type = 'text';
         this.textContent = '👁️‍🗨️';
     } else {
@@ -18,8 +18,6 @@ document.getElementById("mostrarSenha").addEventListener('click', function() {
         this.textContent = '👁️';
     }
     });
-
-
 
 function cadastroFeito() {
     var botao = document.getElementById("btnEntrar");
