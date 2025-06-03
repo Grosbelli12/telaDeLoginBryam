@@ -1,0 +1,247 @@
+/* Resets Globais e Estilos do Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hubballi", sans-serif;
+    background-color: #f0f0f0; /* Um fundo claro para a página fora da caixa de login */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo para respeitar a margem do page-offset-container */
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container para simular o deslocamento original de 80px do topo */
+.page-offset-container {
+    margin-top: 80px; /* Deslocamento original do topo */
+    width: 1120px; /* Soma aproximada das larguras originais da imagem e do formulário */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Raio da borda geral */
+    overflow: hidden; /* Para garantir que o border-radius dos filhos seja cortado corretamente */
+}
+
+/* Container principal para o layout de duas colunas */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 704px; /* Altura fixa original */
+    background-color: #fff; /* Cor de fundo de fallback */
+}
+
+/* Seção Esquerda: Imagem e Marca */
+.image-section {
+    flex: 0 0 657.44px; /* Largura fixa como original */
+    background-image: url('../assets/apresentation_img.png'); /* */
+    background-size: cover; /* Garante que a imagem cubra bem a área */
+    background-position: center;
+    position: relative; /* Para posicionar elementos filhos absolutamente, se necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o título para o topo e o rodapé para baixo */
+    padding: 40px 58px;
+    color: #FDFDFD;
+    border-top-left-radius: 20px; /* */
+    border-bottom-left-radius: 20px; /* Consistente com o canto superior esquerdo */
+}
+
+.image-section-content {
+    position: relative; /* Se necessário para o posicionamento absoluto de #itali-lines */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-title #brand-main-title {
+    font-family: "Galada", cursive; /* */
+    font-weight: 400;
+    font-size: 120px; /* */
+    line-height: 1; /* Ajuste para melhor espaçamento */
+    color: #FDFDFD; /* */
+}
+
+.brand-title #brand-subtitle {
+    font-family: "Hubballi", sans-serif; /* */
+    font-weight: 400;
+    font-size: 60px; /* */
+    line-height: 1;
+    margin-top: -20px; /* Ajuste a sobreposição */
+    color: #FDFDFD; /* */
+}
+
+.image-footer {
+    position: relative; /* Contexto para #itali-lines */
+    text-align: center;
+}
+
+#image-footer-text {
+    font-family: "Galada", cursive; /* */
+    font-weight: 400;
+    font-size: 40px; /* */
+    color: #FDFDFD; /* */
+    margin-bottom: 60px; /* Espaço acima da imagem das linhas */
+}
+
+#itali-lines {
+    position: absolute;
+    bottom: -20px; /* Ajuste conforme o requisito visual */
+    left: 50%;
+    transform: translateX(-50%);
+    /* O CSS original tinha top: 388px, left: 48px - isso requer um contexto pai preciso */
+    /* O novo posicionamento é relativo a .image-footer */
+    width: auto; /* Deixa a imagem definir sua largura, ou defina um valor específico */
+    max-width: 90%;
+}
+
+
+/* Seção Direita: Formulário de Login */
+.form-section {
+    flex-grow: 1;
+    background-color: #A46C44; /* */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    color: #FDFDFD;
+    border-top-right-radius: 20px; /* */
+    border-bottom-right-radius: 20px; /* Consistente com o canto superior direito */
+}
+
+.form-section-content {
+    width: 100%;
+    max-width: 370px; /* Largura original dos campos de texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#logoRedonda {
+    width: 120px; /* Tamanho ajustado para melhor proporção */
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+#login-title {
+    font-family: "Galada", cursive; /* */
+    font-weight: 400;
+    font-size: 55px; /* */
+    letter-spacing: -0.23px;
+    color: #FDFDFD; /* */
+}
+
+#login-subtitle {
+    font-family: "Hubballi", sans-serif; /* */
+    font-weight: 400;
+    font-size: 20px; /* */
+    letter-spacing: -0.23px;
+    color: #FDFDFD; /* */
+    margin-top: 5px;
+}
+
+/* Estilização do Formulário */
+#loginForm {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-wrapper {
+    position: relative; /* Para posicionamento absoluto dos ícones */
+    width: 100%;
+}
+
+.camposDeTexto {
+    width: 100%;
+    background: transparent; /* */
+    border: none; /* */
+    border-bottom: 1px solid #fdfdfd; /* */
+    color: #FDFDFD; /* */
+    font-size: 16px; /* */
+    padding: 10px 35px 10px 35px; /* topo/base, direita (para ícone de visibilidade), esquerda (para ícone de tipo) */
+    font-family: "Hubballi", sans-serif;
+}
+
+.camposDeTexto::placeholder {
+    color: rgba(253, 253, 253, 0.7);
+    font-family: "Hubballi", sans-serif;
+}
+
+.camposDeTexto:focus {
+    outline: none;
+    border-bottom-color: #FFFFFF; /* */
+}
+
+.input-icon-abs { /* Para ícones de email e chave */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* */
+    color: #FDFDFD;
+    /* O JS controlará display: none/inline para estes */
+}
+
+.password-visibility-toggle { /* Ícone de olho */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* */
+    color: #FDFDFD;
+    cursor: pointer; /* */
+}
+
+#esqueci-senha {
+    text-align: right;
+    margin-top: 8px;
+}
+
+#esqueci-senha a {
+    font-family: "Hubballi", sans-serif; /* */
+    font-size: 16px; /* Ajustado do original de 18px */
+    color: #fdfdfd; /* */
+    text-decoration: none;
+}
+
+#esqueci-senha a:hover {
+    text-decoration: underline;
+}
+
+.botao-entrar {
+    width: 100%;
+    background-color: #FDFDFD; /* */
+    color: #231B15; /* */
+    border: none;
+    padding: 12px;
+    border-radius: 5px; /* */
+    font-family: "Hubballi", sans-serif; /* */
+    font-size: 22px; /* Ajustado do original de 25px */
+    font-weight: bold;
+    letter-spacing: -0.23px;
+    cursor: pointer; /* */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-entrar:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para ícones manipulados por JavaScript (Ler_Email.js, Ler_Senha.js) */
+/* O JS define display: none ou display: inline. Garanta que o estado inicial esteja correto, se necessário. */
+/* Por exemplo, se os ícones devem estar ocultos inicialmente até que o JS os mostre: */
+/* #icone-email, #icone-chave { display: none; } */
+/* No entanto, a lógica do JS parece mostrá-los se o campo estiver vazio e sem foco.
+   Então, seu estado padrão no HTML (visível) está bom, o JS irá gerenciá-lo. */

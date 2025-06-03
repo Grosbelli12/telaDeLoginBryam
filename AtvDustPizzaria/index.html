@@ -4,62 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dust Pizzaria - Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/imagem_login.css">
-    <link rel="stylesheet" href="css/parte_login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Hubballi&display=swap" rel="stylesheet">
-    <title>Dust Pizzaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/refactored_style.css">
 </head>
 
 <body>
-    <header>
-        <section id="cabeçalhoImagem">
-            <div class="imagem">
-                <div class="title">
-                    <h1 id="titulo">DUST s</h1>
-                    <h3 id="subtitulo">PIZZARIA</h3>
+    <div class="page-offset-container"> <div class="login-container">
+            <aside class="image-section">
+                <div class="image-section-content">
+                    <div class="brand-title">
+                        <h1 id="brand-main-title">DUST s</h1>
+                        <h3 id="brand-subtitle">PIZZARIA</h3>
+                    </div>
+                    <div class="image-footer">
+                        <p id="image-footer-text">Cardápio e Pedido Online</p>
+                        <img src="assets/itali_lines.png" id="itali-lines" alt="Linhas decorativas italianas">
+                    </div>
                 </div>
-                <div class="rodapeImagem">
-                    <p id="textoRodape">Cardápio e Pedido Online</p>
-                    <img src="assets/itali_lines.png" id="linhas" alt="linhas com três cores da imagem principal">
+            </aside>
+
+            <main class="form-section">
+                <div class="form-section-content">
+                    <header class="login-header">
+                        <img src="assets/logo_pizza.png" id="logoRedonda" alt="Logo da Pizzaria">
+                        <h2 id="login-title">Login</h2>
+                        <p id="login-subtitle">Está sentindo esse cheirinho?</p>
+                    </header>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <span id="icone-email" class="input-icon-abs">✉️</span>
+                                <input type="text" id="meu-email" class="camposDeTexto" placeholder="Seu e-mail">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <span id="icone-chave" class="input-icon-abs">🔑</span>
+                                <input type="password" id="minha-senha" class="camposDeTexto" placeholder="Sua senha">
+                                <span id="icone-senha" class="password-visibility-toggle">👁️</span>
+                            </div>
+                            <p id="esqueci-senha"><a href="#">Esqueceu sua senha?</a></p>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="botao-entrar">Entrar</button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </section>
-        <section id="cabeçalhoLogin">
-            <div class="cabeçalhoLogin">
-                <div id="fundo"></div>
-                <img src="assets/logo_pizza.png" id="logoRedonda" alt="logo redonda da pizza">
-                <h2 id="login">Login</h2>
-                <p id="cheirinho">Está sentindo esse cheirinho?</p>
-            </div>
-        </section>
-    </header>
-    <main id="principal">
-        <section id="email">
-            <div class="email-container">
-                <span id="icone-email">✉️</span>
-                <input type="text" id="meu-email" class="camposDeTexto">
-            </div>
-        </section>
+            </main>
+        </div>
+    </div>
 
-        <section id="senha">
-            <div class="password-container">
-                <span id="icone-chave">🔑</span>
-                <input type="password" id="minha-senha" class="camposDeTexto">
-                <span id="icone-senha">👁️</span>
-                <p id="esqueci-senha">Esqueceu sua senha?</p>
-            </div>
-        </section>
-
-    <section id="entrar">
-         <button class="botao">Entrar</button>
-    </section>
-
-
-    </main>
     <script src="js/Ler_Email.js"></script>
     <script src="js/Ler_Senha.js"></script>
+    <script src="js/Logar.js"></script>
 </body>
 
 </html>
