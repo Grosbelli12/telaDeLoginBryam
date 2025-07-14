@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dust Pizzaria - Login</title>
+    <title>Dust Pizzaria - Autenticação</title>
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/refactored_style.css">
 </head>
 
 <body>
-    <div class="page-offset-container"> <div class="login-container">
+    <div class="page-offset-container">
+        <div class="login-container">
             <aside class="image-section">
                 <div class="image-section-content">
                     <div class="brand-title">
@@ -27,41 +28,122 @@
 
             <main class="form-section">
                 <div class="form-section-content">
-                    <header class="login-header">
-                        <img src="assets/logo_pizza.png" id="logoRedonda" alt="Logo da Pizzaria">
-                        <h2 id="login-title">Login</h2>
-                        <p id="login-subtitle">Está sentindo esse cheirinho?</p>
-                    </header>
 
-                    <form id="loginForm">
-                        <div class="form-group">
-                            <div class="input-wrapper">
-                                <span id="icone-email" class="input-icon-abs">✉️</span>
-                                <input type="text" id="meu-email" class="camposDeTexto" placeholder="Seu e-mail">
+                    <div id="login-view">
+                        <header class="login-header">
+                            <img src="assets/logo_pizza.png" id="logoRedonda" alt="Logo da Pizzaria">
+                            <h2 id="login-title">Login</h2>
+                            <p id="login-subtitle">Está sentindo esse cheirinho?</p>
+                        </header>
+
+                        <form class="form" id="loginForm">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">✉️</span>
+                                    <input type="text" id="meu-email" class="camposDeTexto" placeholder="Seu e-mail">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <div class="input-wrapper">
-                                <span id="icone-chave" class="input-icon-abs">🔑</span>
-                                <input type="password" id="minha-senha" class="camposDeTexto" placeholder="Sua senha">
-                                <span id="icone-senha" class="password-visibility-toggle">👁️</span>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">🔑</span>
+                                    <input type="password" id="minha-senha-login" class="camposDeTexto" placeholder="Sua senha">
+                                    <span id="toggle-login-password" class="password-visibility-toggle">👁️</span>
+                                </div>
+                                <p id="esqueci-senha"><a href="#">Esqueceu sua senha?</a></p>
                             </div>
-                            <p id="esqueci-senha"><a href="#">Esqueceu sua senha?</a></p>
+
+                            <div class="form-group">
+                                <button type="submit" class="botao-principal">ENTRAR</button>
+                            </div>
+                        </form>
+
+                        <div class="social-login-divider">
+                            <span class="divider-line"></span>
+                            <span class="divider-text">ou</span>
+                            <span class="divider-line"></span>
                         </div>
 
-                        <div class="form-group">
-                            <button type="submit" class="botao-entrar">Entrar</button>
+                        <div class="social-login-options">
+                            <a href="#" class="social-icon"><img src="assets/google-logo.png" alt="Google"></a>
+                            <a href="#" class="social-icon"><img src="assets/Apple_logo.png" alt="Apple"></a>
+                            <a href="#" class="social-icon"><img src="assets/windows-10.png" alt="Windows"></a>
                         </div>
-                    </form>
+
+                        <p class="redirect-link">
+                            Não tem uma conta? <a onclick="showSignupView()">Crie uma aqui...</a>
+                        </p>
+                    </div>
+
+                    <div id="signup-view">
+                        <header class="login-header">
+                            <img src="assets/logo_pizza.png" id="logoRedonda" alt="Logo da Pizzaria">
+                            <h2 id="signup-title">Cadastre-se</h2>
+                            <p id="signup-subtitle">Está sentindo esse cheirinho?</p>
+                        </header>
+
+                        <form class="form" id="signupForm">
+                             <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">👤</span>
+                                    <input type="text" class="camposDeTexto" placeholder="Seu nome">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">📞</span>
+                                    <input type="tel" class="camposDeTexto" placeholder="Seu telefone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">✉️</span>
+                                    <input type="email" class="camposDeTexto" placeholder="Seu e-mail">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">🔑</span>
+                                    <input type="password" id="minha-senha-signup" class="camposDeTexto" placeholder="Sua senha">
+                                    <span id="toggle-signup-password" class="password-visibility-toggle">👁️</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-icon-abs">🔑</span>
+                                    <input type="password" id="confirma-senha" class="camposDeTexto" placeholder="Confirme sua senha">
+                                    <span id="toggle-confirm-password" class="password-visibility-toggle">👁️</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="botao-principal">CADASTRAR</button>
+                            </div>
+                        </form>
+
+                         <div class="social-login-divider">
+                            <span class="divider-line"></span>
+                            <span class="divider-text">ou</span>
+                            <span class="divider-line"></span>
+                        </div>
+
+                        <div class="social-login-options">
+                           <a href="#" class="social-icon"><img src="assets/google-logo.png" alt="Google"></a>
+                           <a href="#" class="social-icon"><img src="assets/Apple_logo.png" alt="Apple"></a>
+                           <a href="#" class="social-icon"><img src="assets/windows-10.png" alt="Windows"></a>
+                        </div>
+                        
+                        <p class="redirect-link">
+                            Já tem uma conta? <a onclick="showLoginView()">Faça login aqui...</a>
+                        </p>
+                    </div>
+
                 </div>
             </main>
         </div>
     </div>
-
-    <script src="js/Ler_Email.js"></script>
-    <script src="js/Ler_Senha.js"></script>
-    <script src="js/Logar.js"></script>
+    
+    <script src="js/view_controller.js"></script>
+    <script src="js/form_interactions.js"></script>
 </body>
 
 </html>

@@ -7,49 +7,48 @@
 
 body {
     font-family: "Hubballi", sans-serif;
-    background-color: #f0f0f0; /* Um fundo claro para a página fora da caixa de login */
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha ao topo para respeitar a margem do page-offset-container */
+    align-items: flex-start;
     min-height: 100vh;
     color: #333;
+    padding: 80px 0;
 }
 
-/* Container para simular o deslocamento original de 80px do topo */
+/* Container para simular o deslocamento */
 .page-offset-container {
-    margin-top: 80px; /* Deslocamento original do topo */
-    width: 1120px; /* Soma aproximada das larguras originais da imagem e do formulário */
+    width: 1120px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; /* Raio da borda geral */
-    overflow: hidden; /* Para garantir que o border-radius dos filhos seja cortado corretamente */
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-/* Container principal para o layout de duas colunas */
+/* Container principal */
 .login-container {
     display: flex;
     width: 100%;
-    height: 704px; /* Altura fixa original */
-    background-color: #fff; /* Cor de fundo de fallback */
+    height: auto; /* Altura automática para acomodar os dois formulários */
+    background-color: #fff;
 }
 
-/* Seção Esquerda: Imagem e Marca */
+/* Seção da Imagem */
 .image-section {
-    flex: 0 0 657.44px; /* Largura fixa como original */
-    background-image: url('../assets/apresentation_img.png'); /* */
-    background-size: cover; /* Garante que a imagem cubra bem a área */
+    flex: 0 0 657.44px;
+    background-image: url('../assets/apresentation_img.png');
+    background-size: cover;
     background-position: center;
-    position: relative; /* Para posicionar elementos filhos absolutamente, se necessário */
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Empurra o título para o topo e o rodapé para baixo */
+    justify-content: space-between;
     padding: 40px 58px;
     color: #FDFDFD;
-    border-top-left-radius: 20px; /* */
-    border-bottom-left-radius: 20px; /* Consistente com o canto superior esquerdo */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .image-section-content {
-    position: relative; /* Se necessário para o posicionamento absoluto de #itali-lines */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -57,120 +56,123 @@ body {
 }
 
 .brand-title #brand-main-title {
-    font-family: "Galada", cursive; /* */
+    font-family: "Galada", cursive;
     font-weight: 400;
-    font-size: 120px; /* */
-    line-height: 1; /* Ajuste para melhor espaçamento */
-    color: #FDFDFD; /* */
+    font-size: 120px;
+    line-height: 1;
+    color: #FDFDFD;
 }
 
 .brand-title #brand-subtitle {
-    font-family: "Hubballi", sans-serif; /* */
+    font-family: "Hubballi", sans-serif;
     font-weight: 400;
-    font-size: 60px; /* */
+    font-size: 60px;
     line-height: 1;
-    margin-top: -20px; /* Ajuste a sobreposição */
-    color: #FDFDFD; /* */
+    margin-top: -20px;
+    color: #FDFDFD;
 }
 
 .image-footer {
-    position: relative; /* Contexto para #itali-lines */
+    position: relative;
     text-align: center;
 }
 
 #image-footer-text {
-    font-family: "Galada", cursive; /* */
+    font-family: "Galada", cursive;
     font-weight: 400;
-    font-size: 40px; /* */
-    color: #FDFDFD; /* */
-    margin-bottom: 60px; /* Espaço acima da imagem das linhas */
+    font-size: 40px;
+    color: #FDFDFD;
+    margin-bottom: 60px;
 }
 
 #itali-lines {
     position: absolute;
-    bottom: -20px; /* Ajuste conforme o requisito visual */
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    /* O CSS original tinha top: 388px, left: 48px - isso requer um contexto pai preciso */
-    /* O novo posicionamento é relativo a .image-footer */
-    width: auto; /* Deixa a imagem definir sua largura, ou defina um valor específico */
+    width: auto;
     max-width: 90%;
 }
 
-
-/* Seção Direita: Formulário de Login */
+/* Seção do Formulário */
 .form-section {
     flex-grow: 1;
-    background-color: #A46C44; /* */
-    padding: 40px;
+    background-color: #A46C44;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    justify-content: center;
     color: #FDFDFD;
-    border-top-right-radius: 20px; /* */
-    border-bottom-right-radius: 20px; /* Consistente com o canto superior direito */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .form-section-content {
     width: 100%;
-    max-width: 370px; /* Largura original dos campos de texto */
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#signup-view {
+    display: none; /* Esconde a tela de cadastro por padrão */
+}
+
 .login-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #logoRedonda {
-    width: 120px; /* Tamanho ajustado para melhor proporção */
-    height: 120px;
-    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-#login-title {
-    font-family: "Galada", cursive; /* */
+#login-title, #signup-title {
+    font-family: "Galada", cursive;
     font-weight: 400;
-    font-size: 55px; /* */
-    letter-spacing: -0.23px;
-    color: #FDFDFD; /* */
+    font-size: 55px;
+    color: #FDFDFD;
 }
 
-#login-subtitle {
-    font-family: "Hubballi", sans-serif; /* */
+#login-subtitle, #signup-subtitle {
+    font-family: "Hubballi", sans-serif;
     font-weight: 400;
-    font-size: 20px; /* */
-    letter-spacing: -0.23px;
-    color: #FDFDFD; /* */
+    font-size: 20px;
+    color: #FDFDFD;
     margin-top: 5px;
 }
 
 /* Estilização do Formulário */
-#loginForm {
+.form {
     width: 100%;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
+#signup-view .form-group {
+    margin-bottom: 12px;
+}
+
 .input-wrapper {
-    position: relative; /* Para posicionamento absoluto dos ícones */
+    position: relative;
     width: 100%;
 }
 
 .camposDeTexto {
     width: 100%;
-    background: transparent; /* */
-    border: none; /* */
-    border-bottom: 1px solid #fdfdfd; /* */
-    color: #FDFDFD; /* */
-    font-size: 16px; /* */
-    padding: 10px 35px 10px 35px; /* topo/base, direita (para ícone de visibilidade), esquerda (para ícone de tipo) */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fdfdfd;
+    color: #FDFDFD;
+    font-size: 16px;
+    padding: 10px 35px 10px 35px;
     font-family: "Hubballi", sans-serif;
 }
 
@@ -181,27 +183,26 @@ body {
 
 .camposDeTexto:focus {
     outline: none;
-    border-bottom-color: #FFFFFF; /* */
+    border-bottom-color: #FFFFFF;
 }
 
-.input-icon-abs { /* Para ícones de email e chave */
+.input-icon-abs {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; /* */
+    font-size: 20px;
     color: #FDFDFD;
-    /* O JS controlará display: none/inline para estes */
 }
 
-.password-visibility-toggle { /* Ícone de olho */
+.password-visibility-toggle {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; /* */
+    font-size: 20px;
     color: #FDFDFD;
-    cursor: pointer; /* */
+    cursor: pointer;
 }
 
 #esqueci-senha {
@@ -210,9 +211,9 @@ body {
 }
 
 #esqueci-senha a {
-    font-family: "Hubballi", sans-serif; /* */
-    font-size: 16px; /* Ajustado do original de 18px */
-    color: #fdfdfd; /* */
+    font-family: "Hubballi", sans-serif;
+    font-size: 16px;
+    color: #fdfdfd;
     text-decoration: none;
 }
 
@@ -220,28 +221,87 @@ body {
     text-decoration: underline;
 }
 
-.botao-entrar {
+.botao-principal {
     width: 100%;
-    background-color: #FDFDFD; /* */
-    color: #231B15; /* */
+    background-color: #FDFDFD;
+    color: #231B15;
     border: none;
     padding: 12px;
-    border-radius: 5px; /* */
-    font-family: "Hubballi", sans-serif; /* */
-    font-size: 22px; /* Ajustado do original de 25px */
+    border-radius: 5px;
+    font-family: "Hubballi", sans-serif;
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: -0.23px;
-    cursor: pointer; /* */
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
 }
 
-.botao-entrar:hover {
+.botao-principal:hover {
     background-color: #e0e0e0;
 }
 
-/* Estilos para ícones manipulados por JavaScript (Ler_Email.js, Ler_Senha.js) */
-/* O JS define display: none ou display: inline. Garanta que o estado inicial esteja correto, se necessário. */
-/* Por exemplo, se os ícones devem estar ocultos inicialmente até que o JS os mostre: */
-/* #icone-email, #icone-chave { display: none; } */
-/* No entanto, a lógica do JS parece mostrá-los se o campo estiver vazio e sem foco.
-   Então, seu estado padrão no HTML (visível) está bom, o JS irá gerenciá-lo. */
+/* Divisor "ou" e Login Social */
+.social-login-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #FDFDFD;
+}
+
+.divider-text {
+    padding: 0 15px;
+    font-family: "Hubballi", sans-serif;
+    font-size: 16px;
+    color: #FDFDFD;
+}
+
+.social-login-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FDFDFD;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Link de Redirecionamento */
+.redirect-link {
+    font-family: "Hubballi", sans-serif;
+    font-size: 16px;
+    color: #fdfdfd;
+    margin-top: 15px;
+}
+
+.redirect-link a {
+    color: #fdfdfd;
+    font-weight: bold;
+    cursor: pointer;
+}
+.redirect-link a:hover {
+    text-decoration: underline;
+}
