@@ -1,4 +1,3 @@
-/* Resets Globais e Estilos do Body */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@ body {
     padding: 80px 0;
 }
 
-/* Container para simular o deslocamento */
 .page-offset-container {
     width: 1120px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -28,7 +26,7 @@ body {
 .login-container {
     display: flex;
     width: 100%;
-    height: auto; /* Altura automática para acomodar os dois formulários */
+    height: 704px; 
     background-color: #fff;
 }
 
@@ -42,9 +40,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 58px;
+    padding: 60px 60px;
     color: #FDFDFD;
-    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
@@ -60,6 +57,8 @@ body {
     font-weight: 400;
     font-size: 120px;
     line-height: 1;
+    margin-top: 40px;
+    margin-left: -6px;
     color: #FDFDFD;
 }
 
@@ -73,8 +72,7 @@ body {
 }
 
 .image-footer {
-    position: relative;
-    text-align: center;
+    position: relative;  
 }
 
 #image-footer-text {
@@ -82,13 +80,15 @@ body {
     font-weight: 400;
     font-size: 40px;
     color: #FDFDFD;
-    margin-bottom: 60px;
+    margin-bottom: -40px;
+    margin-left: 80px;
+   
 }
 
 #itali-lines {
     position: absolute;
-    bottom: -20px;
-    left: 50%;
+    bottom: -60px;
+    left: 14px;
     transform: translateX(-50%);
     width: auto;
     max-width: 90%;
@@ -117,33 +117,37 @@ body {
 }
 
 #signup-view {
-    display: none; /* Esconde a tela de cadastro por padrão */
+    display: none; 
 }
 
 .login-header {
-    text-align: center;
     margin-bottom: 25px;
+    
 }
 
 #logoRedonda {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 80px;
+    margin-left:  300px; 
 }
 
 #login-title, #signup-title {
     font-family: "Galada", cursive;
+    position: relative;
     font-weight: 400;
     font-size: 55px;
     color: #FDFDFD;
+    bottom: 150px;    
 }
 
 #login-subtitle, #signup-subtitle {
     font-family: "Hubballi", sans-serif;
+    position: relative;
     font-weight: 400;
     font-size: 20px;
     color: #FDFDFD;
-    margin-top: 5px;
+    bottom: 120px
 }
 
 /* Estilização do Formulário */
