@@ -98,7 +98,7 @@ body {
 .form-section {
     flex-grow: 1;
     background-color: #A46C44;
-    padding: 20px 40px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +164,7 @@ body {
 
 #signup-view .form-group {
     margin-bottom: 12px;
+    position: relative;
 }
 
 .input-wrapper {
@@ -172,19 +173,18 @@ body {
 }
 
 .camposDeTexto {
-    width: 100%;
+    width: 369.60px;
+    position: relative;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fdfdfd;
     color: #FDFDFD;
     font-size: 16px;
-    padding: 10px 35px 10px 35px;
+    padding: 20px 35px 10px 35px;
+    left: 30px;
+    bottom: 150px;
     font-family: "Hubballi", sans-serif;
-}
-
-.camposDeTexto::placeholder {
-    color: rgba(253, 253, 253, 0.7);
-    font-family: "Hubballi", sans-serif;
+    
 }
 
 .camposDeTexto:focus {
@@ -194,8 +194,8 @@ body {
 
 .input-icon-abs {
     position: absolute;
-    left: 10px;
-    top: 50%;
+    left: 30px;
+    bottom: 150px;
     transform: translateY(-50%);
     font-size: 20px;
     color: #FDFDFD;
@@ -203,8 +203,8 @@ body {
 
 .password-visibility-toggle {
     position: absolute;
-    right: 10px;
-    top: 50%;
+    right: 60px;
+    bottom: 150px;
     transform: translateY(-50%);
     font-size: 20px;
     color: #FDFDFD;
@@ -212,13 +212,14 @@ body {
 }
 
 #esqueci-senha {
-    text-align: right;
-    margin-top: 8px;
+    position: relative;
+    left: 30px;
+    bottom: 145px; 
 }
 
 #esqueci-senha a {
     font-family: "Hubballi", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #fdfdfd;
     text-decoration: none;
 }
@@ -228,12 +229,15 @@ body {
 }
 
 .botao-principal {
-    width: 100%;
+    width: 369.60px;
     background-color: #FDFDFD;
     color: #231B15;
     border: none;
+    position: relative;
+    left: 30px;
+    bottom: 130px;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: "Hubballi", sans-serif;
     font-size: 22px;
     font-weight: bold;
