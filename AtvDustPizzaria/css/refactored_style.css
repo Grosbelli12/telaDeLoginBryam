@@ -22,15 +22,16 @@ body {
     overflow: hidden;
 }
 
-/* Container principal */
+/* Container principal - Layout padrão para a tela de login */
 .login-container {
     display: flex;
     width: 100%;
     height: 704px; 
     background-color: #fff;
+    /* flex-direction: row; é o padrão, então não precisamos declarar */
 }
 
-/* Seção da Imagem */
+/* Seção da Imagem - Layout padrão (esquerda) */
 .image-section {
     flex: 0 0 657.44px;
     background-image: url('../assets/apresentation_img.png');
@@ -42,6 +43,7 @@ body {
     justify-content: space-between;
     padding: 60px 60px;
     color: #FDFDFD;
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
@@ -82,7 +84,6 @@ body {
     color: #FDFDFD;
     margin-bottom: -40px;
     margin-left: 80px;
-   
 }
 
 #itali-lines {
@@ -94,12 +95,10 @@ body {
     max-width: 90%;
 }
 
-/* Seção do Formulário */
+/* Seção do Formulário - Layout padrão (direita) */
 .form-section {
     flex-grow: 1;
     background-color: #A46C44;
-    
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +165,6 @@ body {
 #signup-view .form-group {
     margin-bottom: 12px;
     position: relative;
-    position: relative;
 }
 
 .input-wrapper {
@@ -177,8 +175,6 @@ body {
 .camposDeTexto {
     width: 369.60px;
     position: relative;
-    width: 369.60px;
-    position: relative;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fdfdfd;
@@ -187,12 +183,7 @@ body {
     padding: 20px 35px 10px 35px;
     left: 30px;
     bottom: 150px;
-    padding: 20px 35px 10px 35px;
-    left: 30px;
-    bottom: 150px;
     font-family: "Hubballi", sans-serif;
-    
-    
 }
 
 .camposDeTexto:focus {
@@ -204,8 +195,6 @@ body {
     position: absolute;
     left: 30px;
     bottom: 150px;
-    left: 30px;
-    bottom: 150px;
     transform: translateY(-50%);
     font-size: 20px;
     color: #FDFDFD;
@@ -213,7 +202,7 @@ body {
 
 .password-visibility-toggle {
     position: absolute;
-    right: 6    0px;
+    right: 60px;
     bottom: 150px;
     transform: translateY(-50%);
     font-size: 20px;
@@ -225,14 +214,10 @@ body {
     position: relative;
     left: 30px;
     bottom: 145px; 
-    position: relative;
-    left: 30px;
-    bottom: 145px; 
 }
 
 #esqueci-senha a {
     font-family: "Hubballi", sans-serif;
-    font-size: 18px;
     font-size: 18px;
     color: #fdfdfd;
     text-decoration: none;
@@ -243,7 +228,6 @@ body {
 }
 
 .botao-principal {
-    width: 369.60px;
     width: 369.60px;
     background-color: #FDFDFD;
     color: #231B15;
@@ -343,4 +327,125 @@ body {
 
 .space-text {
     margin-right: 5px;
+}
+
+/* --- ESTILOS PARA A TELA DE CADASTRO --- */
+
+/* Inverte a ordem do container quando a tela de cadastro está ativa */
+.login-container.signup-active {
+    flex-direction: row-reverse;
+}
+
+/* Ajusta a borda da imagem para a direita */
+.login-container.signup-active .image-section {
+    border-radius: 0 20px 20px 0;
+}
+
+/* Ajusta a borda do formulário para a esquerda */
+.login-container.signup-active .form-section {
+    border-radius: 20px 0 0 20px;
+}
+/* --- Estilos para o Novo Layout da Tela de Cadastro --- */
+
+/* Torna a seção do formulário um container de posicionamento */
+.form-section {
+    position: relative;
+}
+
+/* Posiciona o logo no canto superior direito da tela de cadastro */
+#signup-view #logoRedonda {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    bottom: auto;
+    left: auto;
+}
+
+/* Alinha o cabeçalho e os títulos à esquerda */
+#signup-view .login-header {
+    width: 100%;
+    max-width: 370px;
+    padding: 0 5px; /* Ajuste do preenchimento */
+    margin-bottom: 20px;
+}
+
+#signup-view #signup-title,
+#signup-view #signup-subtitle {
+    position: static;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#signup-view #signup-subtitle {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Reseta o posicionamento dos campos de texto e ícones */
+#signup-view .camposDeTexto {
+    position: static;
+    padding: 15px 40px; /* Ajusta o padding para o alinhamento vertical */
+    width: 100%;
+}
+
+#signup-view .input-wrapper {
+    position: relative;
+}
+
+#signup-view .input-icon-abs {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto; /* Reseta o 'bottom' */
+}
+
+#signup-view .password-visibility-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto; /* Reseta o 'bottom' */
+    left: auto; /* Reseta o 'left' */
+}
+
+/* Reseta o posicionamento do botão e adiciona margem */
+#signup-view .botao-principal {
+    position: static;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Centraliza o divisor "ou" */
+#signup-view .social-login-divider {
+    position: static;
+    margin: 30px auto;
+    width: 100%;
+    left: auto;
+    bottom: auto;
+}
+
+#signup-view .divider-text{
+    position: static;
+    margin: 0 10px;
+}
+
+/* Reseta o posicionamento dos ícones sociais */
+#signup-view .social-login-options {
+    position: static;
+    bottom: auto;
+    margin-bottom: 0;
+}
+
+#signup-view .social-icon {
+    position: static;
+}
+
+/* Oculta o link de redirecionamento "Já tem uma conta?" */
+#signup-view .redirect-link {
+    display: none;
 }
