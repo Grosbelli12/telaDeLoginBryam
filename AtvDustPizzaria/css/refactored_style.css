@@ -99,6 +99,7 @@ body {
     flex-grow: 1;
     background-color: #A46C44;
     
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +166,7 @@ body {
 #signup-view .form-group {
     margin-bottom: 12px;
     position: relative;
+    position: relative;
 }
 
 .input-wrapper {
@@ -175,6 +177,8 @@ body {
 .camposDeTexto {
     width: 369.60px;
     position: relative;
+    width: 369.60px;
+    position: relative;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fdfdfd;
@@ -183,7 +187,11 @@ body {
     padding: 20px 35px 10px 35px;
     left: 30px;
     bottom: 150px;
+    padding: 20px 35px 10px 35px;
+    left: 30px;
+    bottom: 150px;
     font-family: "Hubballi", sans-serif;
+    
     
 }
 
@@ -194,6 +202,8 @@ body {
 
 .input-icon-abs {
     position: absolute;
+    left: 30px;
+    bottom: 150px;
     left: 30px;
     bottom: 150px;
     transform: translateY(-50%);
@@ -215,10 +225,14 @@ body {
     position: relative;
     left: 30px;
     bottom: 145px; 
+    position: relative;
+    left: 30px;
+    bottom: 145px; 
 }
 
 #esqueci-senha a {
     font-family: "Hubballi", sans-serif;
+    font-size: 18px;
     font-size: 18px;
     color: #fdfdfd;
     text-decoration: none;
@@ -229,6 +243,7 @@ body {
 }
 
 .botao-principal {
+    width: 369.60px;
     width: 369.60px;
     background-color: #FDFDFD;
     color: #231B15;
