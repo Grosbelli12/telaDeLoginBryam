@@ -5,10 +5,10 @@ function togglePasswordVisibility(inputId, toggleId) {
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        toggleIcon.textContent = "👁️‍🗨️"; // Olho aberto
+        toggleIcon.textContent = "👁️‍🗨️"; 
     } else {
         passwordInput.type = "password";
-        toggleIcon.textContent = "👁️"; // Olho fechado
+        toggleIcon.textContent = "👁️"; 
     }
 }
 

@@ -331,44 +331,37 @@ body {
 
 /* --- ESTILOS PARA A TELA DE CADASTRO --- */
 
-/* Inverte a ordem do container quando a tela de cadastro está ativa */
 .login-container.signup-active {
     flex-direction: row-reverse;
 }
 
-/* Ajusta a borda da imagem para a direita */
 .login-container.signup-active .image-section {
     border-radius: 0 20px 20px 0;
 }
 
-/* Ajusta a borda do formulário para a esquerda */
 .login-container.signup-active .form-section {
     border-radius: 20px 0 0 20px;
 }
-/* --- Estilos para o Novo Layout da Tela de Cadastro --- */
 
-/* Torna a seção do formulário um container de posicionamento */
 .form-section {
     position: relative;
 }
 
-/* Posiciona o logo no canto superior direito da tela de cadastro */
 #signup-view #logoRedonda {
     position: absolute;
-    top: 25px;
-    right: 35px;
-    width: 60px;
-    height: 60px;
+    top: 1px;
+    width: 150px;
+    height: 150px;
     margin: 0;
-    bottom: auto;
-    left: auto;
+    left: 970px;
+    
 }
 
 /* Alinha o cabeçalho e os títulos à esquerda */
 #signup-view .login-header {
     width: 100%;
     max-width: 370px;
-    padding: 0 5px; /* Ajuste do preenchimento */
+    padding: 0 5px; 
     margin-bottom: 20px;
 }
 
@@ -376,7 +369,7 @@ body {
 #signup-view #signup-subtitle {
     position: static;
     text-align: left;
-    width: 100%;
+    width: 140%;
     margin-bottom: 8px;
 }
 
@@ -385,10 +378,9 @@ body {
     font-size: 18px;
 }
 
-/* Reseta o posicionamento dos campos de texto e ícones */
 #signup-view .camposDeTexto {
     position: static;
-    padding: 15px 40px; /* Ajusta o padding para o alinhamento vertical */
+    padding: 10px 40px; 
     width: 100%;
 }
 
