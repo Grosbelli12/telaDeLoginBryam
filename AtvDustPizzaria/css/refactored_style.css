@@ -203,7 +203,7 @@ body {
 
 .password-visibility-toggle {
     position: absolute;
-    right: 60px;
+    right: 6    0px;
     bottom: 150px;
     transform: translateY(-50%);
     font-size: 20px;
@@ -236,7 +236,7 @@ body {
     position: relative;
     left: 30px;
     bottom: 130px;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
     font-family: "Hubballi", sans-serif;
     font-size: 22px;
@@ -253,9 +253,12 @@ body {
 /* Divisor "ou" e Login Social */
 .social-login-divider {
     display: flex;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
+    position: relative;
+    width: 112px;
     margin: 20px 0;
+    left: 170px;
+    bottom: 90px;
 }
 
 .divider-line {
@@ -263,12 +266,14 @@ body {
     height: 1px;
     background-color: #FDFDFD;
 }
-
+    
 .divider-text {
-    padding: 0 15px;
+    position: relative;
     font-family: "Hubballi", sans-serif;
     font-size: 16px;
     color: #FDFDFD;
+    right: 60px;
+    bottom: 20px;
 }
 
 .social-login-options {
@@ -281,13 +286,15 @@ body {
 
 .social-icon {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 56px;
     height: 50px;
     background-color: #FDFDFD;
     border-radius: 50%;
     transition: transform 0.2s ease;
+    bottom: 110px;
 }
 
 .social-icon:hover {
@@ -295,18 +302,21 @@ body {
 }
 
 .social-icon img {
-    width: 24px;
-    height: 24px;
+    width: 42px;
+    height: 42px;
 }
 
 /* Link de Redirecionamento */
 .redirect-link {
+    display: flex;
     font-family: "Hubballi", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #fdfdfd;
-    margin-top: 15px;
+    position: relative;
+    justify-content: center;
+    bottom: 50px;
 }
-
+    
 .redirect-link a {
     color: #fdfdfd;
     font-weight: bold;
@@ -314,4 +324,8 @@ body {
 }
 .redirect-link a:hover {
     text-decoration: underline;
+}
+
+.space-text {
+    margin-right: 5px;
 }
