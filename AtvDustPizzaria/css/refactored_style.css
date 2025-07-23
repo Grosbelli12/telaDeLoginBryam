@@ -236,10 +236,11 @@ body {
     left: 30px;
     bottom: 130px;
     padding: 10px;
+    height: 50px;
     border-radius: 10px;
     font-family: "Hubballi", sans-serif;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 400;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 10px;
@@ -357,7 +358,6 @@ body {
     
 }
 
-/* Alinha o cabeçalho e os títulos à esquerda */
 #signup-view .login-header {
     width: 100%;
     max-width: 370px;
@@ -393,7 +393,7 @@ body {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    bottom: auto; /* Reseta o 'bottom' */
+    bottom: auto; 
 }
 
 #signup-view .password-visibility-toggle {
@@ -401,32 +401,48 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    bottom: auto; /* Reseta o 'bottom' */
-    left: auto; /* Reseta o 'left' */
+    bottom: auto; 
+    left: auto; 
 }
 
-/* Reseta o posicionamento do botão e adiciona margem */
 #signup-view .botao-principal {
-    position: static;
-    width: 100%;
-    margin-top: 25px;
+    width: 369.60px;
+    background-color: #FDFDFD;
+    color: #231B15;
+    border: none;
+    position: relative;
+    left: -5px;
+    bottom: -20px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Hubballi", sans-serif;
+    font-size: 25 px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
 }
 
 /* Centraliza o divisor "ou" */
 #signup-view .social-login-divider {
-    position: static;
+    position: relative;
     margin: 30px auto;
-    width: 100%;
-    left: auto;
-    bottom: auto;
+    width: 112px;
+    left: 2px;
+    bottom: -45px;
 }
 
 #signup-view .divider-text{
-    position: static;
-    margin: 0 10px;
+     position: relative;
+    font-family: "Hubballi", sans-serif;
+    font-size: 16px;
+    color: #FDFDFD;
+    right: 60px;
+    bottom: 20px;
+    
 }
 
-/* Reseta o posicionamento dos ícones sociais */
 #signup-view .social-login-options {
     position: static;
     bottom: auto;
@@ -434,10 +450,13 @@ body {
 }
 
 #signup-view .social-icon {
-    position: static;
+    position: relative;
+    bottom:  -30px;
 }
 
 /* Oculta o link de redirecionamento "Já tem uma conta?" */
 #signup-view .redirect-link {
-    display: none;
+    position: relative;
+    bottom: -20px;
+    margin-top: 20px;
 }

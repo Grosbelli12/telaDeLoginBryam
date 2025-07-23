@@ -6,11 +6,11 @@ const signupView = document.getElementById('signup-view');
 function showSignupView() {
     loginView.style.display = 'none';
     signupView.style.display = 'block';
-    loginContainer.classList.add('signup-active'); // Adiciona a classe para inverter
+    loginContainer.classList.add('signup-active'); 
 }
 
 function showLoginView() {
     signupView.style.display = 'none';
     loginView.style.display = 'block';
-    loginContainer.classList.remove('signup-active'); // Remove a classe para voltar ao normal
+    loginContainer.classList.remove('signup-active');
 }
