@@ -28,10 +28,9 @@ body {
     width: 100%;
     height: 704px; 
     background-color: #fff;
-    /* flex-direction: row; é o padrão, então não precisamos declarar */
 }
 
-/* Seção da Imagem - Layout padrão (esquerda) */
+*/
 .image-section {
     flex: 0 0 657.44px;
     background-image: url('../assets/apresentation_img.png');

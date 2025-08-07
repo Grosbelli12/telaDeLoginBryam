@@ -26,6 +26,7 @@ document.getElementById("toggle-confirm-password").addEventListener("click", fun
 });
 
 // --- LÓGICA PARA ESCONDER ÍCONES AO FOCAR NOS CAMPOS ---
+// focus foca no elemento fazendo com que o ícone desapareça e blur desfoca o elemento fazendo com que o ícone apareça novamente se o campo estiver vazio
 document.querySelectorAll('.camposDeTexto').forEach(input => {
     const icon = input.parentElement.querySelector('.input-icon-abs');
     if (icon) {
